@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="List_x0020_Student">
+        <s:complexType />
+      </s:element>
+      <s:element name="List_x0020_StudentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_x0020_StudentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add_x0020_Student">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add_x0020_StudentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Add_x0020_StudentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete_x0020_Student">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete_x0020_StudentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="List_x0020_Course">
+        <s:complexType />
+      </s:element>
+      <s:element name="List_x0020_CourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_x0020_CourseResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_x0020_Course_x0020_Registered_x0020_Students">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_x0020_Course_x0020_Registered_x0020_StudentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_x0020_Course_x0020_Registered_x0020_StudentsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Register_x0020_course">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="s_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c_title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c_w_hours" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Register_x0020_courseResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_x0020_all_x0020_registered_x0020_courses">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_x0020_all_x0020_registered_x0020_coursesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_x0020_all_x0020_registered_x0020_coursesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="email_x0020_test">
+        <s:complexType />
+      </s:element>
+      <s:element name="email_x0020_testResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email_x0020_testResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="List_x0020_StudentSoapIn">
+    <wsdl:part name="parameters" element="tns:List_x0020_Student" />
+  </wsdl:message>
+  <wsdl:message name="List_x0020_StudentSoapOut">
+    <wsdl:part name="parameters" element="tns:List_x0020_StudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Add_x0020_StudentSoapIn">
+    <wsdl:part name="parameters" element="tns:Add_x0020_Student" />
+  </wsdl:message>
+  <wsdl:message name="Add_x0020_StudentSoapOut">
+    <wsdl:part name="parameters" element="tns:Add_x0020_StudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Delete_x0020_StudentSoapIn">
+    <wsdl:part name="parameters" element="tns:Delete_x0020_Student" />
+  </wsdl:message>
+  <wsdl:message name="Delete_x0020_StudentSoapOut">
+    <wsdl:part name="parameters" element="tns:Delete_x0020_StudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_x0020_CourseSoapIn">
+    <wsdl:part name="parameters" element="tns:List_x0020_Course" />
+  </wsdl:message>
+  <wsdl:message name="List_x0020_CourseSoapOut">
+    <wsdl:part name="parameters" element="tns:List_x0020_CourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_x0020_Course_x0020_Registered_x0020_StudentsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_x0020_Course_x0020_Registered_x0020_Students" />
+  </wsdl:message>
+  <wsdl:message name="Get_x0020_Course_x0020_Registered_x0020_StudentsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_x0020_Course_x0020_Registered_x0020_StudentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Register_x0020_courseSoapIn">
+    <wsdl:part name="parameters" element="tns:Register_x0020_course" />
+  </wsdl:message>
+  <wsdl:message name="Register_x0020_courseSoapOut">
+    <wsdl:part name="parameters" element="tns:Register_x0020_courseResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_x0020_all_x0020_registered_x0020_coursesSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_x0020_all_x0020_registered_x0020_courses" />
+  </wsdl:message>
+  <wsdl:message name="Get_x0020_all_x0020_registered_x0020_coursesSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_x0020_all_x0020_registered_x0020_coursesResponse" />
+  </wsdl:message>
+  <wsdl:message name="email_x0020_testSoapIn">
+    <wsdl:part name="parameters" element="tns:email_x0020_test" />
+  </wsdl:message>
+  <wsdl:message name="email_x0020_testSoapOut">
+    <wsdl:part name="parameters" element="tns:email_x0020_testResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="getStudentData">
+      <wsdl:input name="List_x0020_Student" message="tns:List_x0020_StudentSoapIn" />
+      <wsdl:output name="List_x0020_Student" message="tns:List_x0020_StudentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addStudent">
+      <wsdl:input name="Add_x0020_Student" message="tns:Add_x0020_StudentSoapIn" />
+      <wsdl:output name="Add_x0020_Student" message="tns:Add_x0020_StudentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteStudent">
+      <wsdl:input name="Delete_x0020_Student" message="tns:Delete_x0020_StudentSoapIn" />
+      <wsdl:output name="Delete_x0020_Student" message="tns:Delete_x0020_StudentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listCourse">
+      <wsdl:input name="List_x0020_Course" message="tns:List_x0020_CourseSoapIn" />
+      <wsdl:output name="List_x0020_Course" message="tns:List_x0020_CourseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCourseRegisteredStudents">
+      <wsdl:input name="Get_x0020_Course_x0020_Registered_x0020_Students" message="tns:Get_x0020_Course_x0020_Registered_x0020_StudentsSoapIn" />
+      <wsdl:output name="Get_x0020_Course_x0020_Registered_x0020_Students" message="tns:Get_x0020_Course_x0020_Registered_x0020_StudentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="registerNewCourse">
+      <wsdl:input name="Register_x0020_course" message="tns:Register_x0020_courseSoapIn" />
+      <wsdl:output name="Register_x0020_course" message="tns:Register_x0020_courseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllRegisteredCourses">
+      <wsdl:input name="Get_x0020_all_x0020_registered_x0020_courses" message="tns:Get_x0020_all_x0020_registered_x0020_coursesSoapIn" />
+      <wsdl:output name="Get_x0020_all_x0020_registered_x0020_courses" message="tns:Get_x0020_all_x0020_registered_x0020_coursesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="emailTest">
+      <wsdl:input name="email_x0020_test" message="tns:email_x0020_testSoapIn" />
+      <wsdl:output name="email_x0020_test" message="tns:email_x0020_testSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getStudentData">
+      <soap:operation soapAction="http://tempuri.org/List Student" style="document" />
+      <wsdl:input name="List_x0020_Student">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="List_x0020_Student">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addStudent">
+      <soap:operation soapAction="http://tempuri.org/Add Student" style="document" />
+      <wsdl:input name="Add_x0020_Student">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Add_x0020_Student">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteStudent">
+      <soap:operation soapAction="http://tempuri.org/Delete Student" style="document" />
+      <wsdl:input name="Delete_x0020_Student">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Delete_x0020_Student">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listCourse">
+      <soap:operation soapAction="http://tempuri.org/List Course" style="document" />
+      <wsdl:input name="List_x0020_Course">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="List_x0020_Course">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCourseRegisteredStudents">
+      <soap:operation soapAction="http://tempuri.org/Get Course Registered Students" style="document" />
+      <wsdl:input name="Get_x0020_Course_x0020_Registered_x0020_Students">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Get_x0020_Course_x0020_Registered_x0020_Students">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerNewCourse">
+      <soap:operation soapAction="http://tempuri.org/Register course" style="document" />
+      <wsdl:input name="Register_x0020_course">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Register_x0020_course">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllRegisteredCourses">
+      <soap:operation soapAction="http://tempuri.org/Get all registered courses" style="document" />
+      <wsdl:input name="Get_x0020_all_x0020_registered_x0020_courses">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Get_x0020_all_x0020_registered_x0020_courses">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="emailTest">
+      <soap:operation soapAction="http://tempuri.org/email test" style="document" />
+      <wsdl:input name="email_x0020_test">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="email_x0020_test">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getStudentData">
+      <soap12:operation soapAction="http://tempuri.org/List Student" style="document" />
+      <wsdl:input name="List_x0020_Student">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="List_x0020_Student">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addStudent">
+      <soap12:operation soapAction="http://tempuri.org/Add Student" style="document" />
+      <wsdl:input name="Add_x0020_Student">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Add_x0020_Student">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteStudent">
+      <soap12:operation soapAction="http://tempuri.org/Delete Student" style="document" />
+      <wsdl:input name="Delete_x0020_Student">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Delete_x0020_Student">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listCourse">
+      <soap12:operation soapAction="http://tempuri.org/List Course" style="document" />
+      <wsdl:input name="List_x0020_Course">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="List_x0020_Course">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCourseRegisteredStudents">
+      <soap12:operation soapAction="http://tempuri.org/Get Course Registered Students" style="document" />
+      <wsdl:input name="Get_x0020_Course_x0020_Registered_x0020_Students">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Get_x0020_Course_x0020_Registered_x0020_Students">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerNewCourse">
+      <soap12:operation soapAction="http://tempuri.org/Register course" style="document" />
+      <wsdl:input name="Register_x0020_course">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Register_x0020_course">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllRegisteredCourses">
+      <soap12:operation soapAction="http://tempuri.org/Get all registered courses" style="document" />
+      <wsdl:input name="Get_x0020_all_x0020_registered_x0020_courses">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Get_x0020_all_x0020_registered_x0020_courses">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="emailTest">
+      <soap12:operation soapAction="http://tempuri.org/email test" style="document" />
+      <wsdl:input name="email_x0020_test">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="email_x0020_test">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://localhost/webService/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://localhost/webService/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
